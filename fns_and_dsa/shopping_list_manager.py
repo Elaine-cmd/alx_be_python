@@ -48,6 +48,5 @@ def shopping_list_manager():
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
 
-# Run the script
 if __name__ == "__main__":
     shopping_list_manager()
