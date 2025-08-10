@@ -27,12 +27,3 @@ July Work Log
 5. June Git Issues and Fixes
 Issue: Staging from the wrong directory
 Fix: Use `pwd` to confirm location before staging. If wrong, navigate to the project root.
-
-Issue: Merge conflicts when pulling
-Fix: Use `git stash`, then `git pull origin main`, and `git stash pop`.
-
-Issue: README changes not showing on GitHub
-Fix: Make sure the file is tracked with `git add`, commit with a clear message, and push.
-
-Issue: Too many small commits
-Fix: Batch related changes into one commit using `git add .` and a single commit message.
