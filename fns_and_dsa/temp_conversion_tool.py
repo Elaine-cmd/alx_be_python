@@ -1,31 +1,70 @@
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+class Student:
+    def __init__ (self, name, age ):
+        self.name = name
+        self.age = age
 
-def convert_to_celsius(fahrenheit):
-    
-    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    def display_information (self):
+        print(f" Student name: {self.name}")
+        print(f"Student age: {self.age}")
 
-def convert_to_fahrenheit(celsius):
-    
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    student1 = Student("Alice", 20)
+    student2 = Student("Einstein", 19)
+     
+    print("Displaying information for student1:")
+    student1.display_info()
+    print("Displaying information for student2:")
+    student2.display_info()
 
-def main():
-    try:
-        temp_input = input("Enter the temperature to convert: ").strip()
-        unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+  
 
-        temperature = float(temp_input)
 
-        if unit == "F":
-            converted = convert_to_celsius(temperature)
-            print(f"{temperature}°F is {converted:.2f}°C")
-        elif unit == "C":
-            converted = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is {converted:.2f}°F")
-        else:
-            print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-    except ValueError:
-        raise ValueError("Invalid temperature. Please enter a numeric value.")
 
-if __name__ == "__main__":
-    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
